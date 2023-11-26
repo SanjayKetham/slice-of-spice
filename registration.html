@@ -1,0 +1,181 @@
+<html>
+<style>
+
+.container2 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  background-color: rgb(29, 28, 28);
+  max-width: 700px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px 30px;
+  border-radius: 5%;
+}
+.container2 .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container2 .title::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background-color: #9b59b6;
+  left: 0;
+  bottom: 0;
+}
+.container2 form .userdetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .userdetails .inputbox {
+  width: calc(100% / 2 - 20px);
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+.userdetails .inputbox input {
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: solid;
+  border-style: none;
+  background-color: rgb(56, 55, 55);
+  color: #fff;
+  padding-left: 13px;
+}
+.userdetails .inputbox .details {
+  font-weight: 500;
+  display: block;
+}
+form .genderdetails .gendertitle {
+  font-weight: 500;
+  padding-right: 250px;
+  padding-bottom: 5px;
+  position: relative;
+}
+form .genderdetails .category {
+  opacity: 0.8;
+}
+form .genderdetails {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+}
+form .datepic input {
+  font-size: 15px;
+  opacity: 0.5;
+}
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  background: #8e629f;
+  border: none;
+  border-radius: 6px;
+}
+.container2 .close-modalreg {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 40px;
+  color: #6a6767;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.close-modallogin {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e8e7e7;
+  background-color: #292828;
+  border-radius: 50%;
+  font-weight: 500;
+}
+</style>
+<body background="res3.png"></body>
+<div class="registration hidden">
+    <div class="container2">
+      <button class="close-modalreg">&times;</button>
+      <div class="title">Registration</div>
+      <form action="#">
+        <div class="userdetails">
+          <div class="inputbox">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div class="inputbox">
+            <span class="details">User Name</span>
+            <input type="text" placeholder="Enter your username" />
+          </div>
+          <div class="inputbox">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" />
+          </div>
+          <div class="inputbox">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" />
+          </div>
+          <div class="inputbox">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" />
+          </div>
+          <div class="inputbox">
+            <span class="details">Confirm Password</span>
+            <input
+              type="text"
+              class="cnfpass"
+              placeholder="Confirm your password"
+            />
+          </div>
+          <div class="genderdetails">
+            <span class="gendertitle">Gender</span>
+            <div class="category">
+              <label for="">
+                <span class="dot-one"></span>
+                <input type="radio" value="" name="gen" />
+                <span class="gender">Male</span>
+              </label>
+              <label for="">
+                <span class="dot-one"></span>
+                <input type="radio" value="" name="gen" />
+                <span class="gender">Female</span>
+              </label>
+              <label for="">
+                <span class="dot-one"></span>
+                <input type="radio" value="" name="gen" />
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+          <div class="inputbox datepic">
+            <span class="details">DOB</span>
+            <input type="date" />
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+  </div>
+</html>
