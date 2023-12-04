@@ -21,7 +21,7 @@
     }
     
     body{
-        background-image: url("loginimg.jpg.png");
+        background-color:#ffcae5;
         display: flex;
         justify-content: center;
         flex-direction:column;
@@ -152,12 +152,12 @@ input {
 			<form action="#">
 				<h1>Login</h1>
 				<div class="social-container">
-					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
-					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+					<a href="https://www.facebook.com/login/" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://twitter.com/i/flow/login" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
 				</div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="password" />
+                <input type="email" placeholder="Email" id="email"/>
+                <input type="password" placeholder="password" pattern="^[A-Z][a-z]+" id="password"/>
                 <a href="#">Forgot your password?</a>
 				<a href="registration.html">Registration</a>
                 <button>Log In</button>
@@ -170,5 +170,11 @@ input {
             </div>
         </div>
     </div>
+<script>
+	function fun()
+	{
+		alert("Login Successful");}
+	
+</script>
 </body>
 </html>
