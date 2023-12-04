@@ -5,7 +5,7 @@
   position: absolute;
   top: 20%;
   left: 25%;
-  background-color: rgb(29, 28, 28);
+  background-color: rgb(57, 56, 56);
   max-width: 700px;
   width: 100%;
   color: #fff;
@@ -121,11 +121,11 @@ form .button input {
         <div class="userdetails">
           <div class="inputbox">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" />
+            <input type="text" placeholder="Enter your name" pattern="^[A-Z][a-z]+" />
           </div>
           <div class="inputbox">
             <span class="details">User Name</span>
-            <input type="text" placeholder="Enter your username" />
+            <input type="text" placeholder="Enter your username" pattern="^[A-Z][a-z]+[0-9]+" />
           </div>
           <div class="inputbox">
             <span class="details">Email</span>
@@ -133,18 +133,18 @@ form .button input {
           </div>
           <div class="inputbox">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" />
+            <input type="text" placeholder="Enter your number" pattern="[0-9]{10}" />
           </div>
           <div class="inputbox">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" />
+            <input type="text" placeholder="Enter your password" pattern="^[A-Z][a-z]+" id="password" />
           </div>
           <div class="inputbox">
             <span class="details">Confirm Password</span>
             <input
               type="text"
               class="cnfpass"
-              placeholder="Confirm your password"
+              placeholder="Confirm your password" id="Confirm"
             />
           </div>
           <div class="genderdetails">
@@ -178,4 +178,19 @@ form .button input {
       </form>
     </div>
   </div>
+  <script>
+    function fun()
+    {
+      var a=document.getElementById("password").value;
+      var b=document.getElementById("confirm").value;
+      if(a=b)
+      {
+        alert("Registered Successful");
+      }
+      else{
+        alert("Not Registered Successful");
+      }
+    }
+
+  </script>
 </html>
