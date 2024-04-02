@@ -1,0 +1,461 @@
+<html>
+<head>
+
+<style>
+.info{
+
+margin-top:300px;
+background:none;}
+.hi{
+background-color:white;
+border-radius:10px;
+color:black;
+
+}
+div{
+color:white;
+background-color:rgba(0, 0, 0, 0.541);
+}
+ul,li{
+float:left;
+}
+li{
+font-size:20px;
+margin-left:100px;
+
+}
+h1{
+    text-align: center;
+}
+
+ul{
+list-style:none;
+}
+
+body{
+overflow: scroll;
+background-repeat: no-repeat;
+background-size: contain;
+background-color: black;
+}
+span{
+margin-left:70px;
+}
+.tit{
+font-family: 'Croissant One', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Sedgwick Ave Display', cursive;
+text-align:center;
+color:white;
+font-size:60px;
+text-decoration:underline;
+text-decoration-color:white;
+}
+#titmen{
+	display: flex;
+
+}
+.menu{
+	color: white;
+	position:fixed;
+}
+#menu{
+	margin-left: 200px;
+	color: black;
+	background-color: white;
+	margin-top: 10px;
+	margin-left: 100px;
+	font-size: 50px	;
+	width: 500px;
+	box-shadow: 10px 10px 10px rgba(243, 243, 242, 0.5);
+	border-radius: 50px;
+	transition: width 3s;
+	padding: 30px;
+	border-style: outset inset;
+	border-color: black;
+		
+}
+#menu:hover{
+	cursor: pointer;
+	color:white;
+	background-color: black;
+	color:white;
+	border-style: inset outset;
+	border-color: white;
+	border-width: 10px;
+	width:600px;
+
+}
+h4,h5{
+	text-align: center;
+}
+#food menu{
+margin-left: 200px;
+	color: black;
+	background-color: white;
+	margin-top: 10px;
+	margin-left: 100px;
+	font-size: 50px	;
+	width: 500px;
+	box-shadow: 10px 10px 10px rgba(243, 243, 242, 0.5);
+	border-radius: 50px;
+	transition: width 3s;
+	padding: 30px;
+	border-style: outset inset;
+	border-color: black;
+}
+#food menu:hover{
+	cursor: pointer;
+	color:white;
+	background-color: black;
+	border-style: inset outset;
+	color:white;
+	border-color: white;
+	border-width: 10px;
+	width:600px;
+}
+h2,h3{
+	text-align: center;
+}
+.drmen{
+	
+border-radius: 50px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    position: relative;
+	margin-top: 300px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	box-shadow: 10px 10px 10px rgb(247, 246, 245);
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.drmen1{
+	
+    border-radius: 50px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        margin-top:30px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        box-shadow: 10px 10px 10px rgb(247, 246, 245);
+    }
+
+.drink{
+	margin-left: 30px;
+	display: inline;
+	border-radius: 40px;
+	background-color: black;
+	margin-bottom: 130px;
+	box-shadow: 10px 10px 10px rgba(241, 241, 239, 0.5);
+}
+.drink1{
+	margin-left: 30px;
+	border-radius: 40px;
+	box-shadow: 10px 10px 10px rgba(244, 244, 243, 0.5);
+}
+#drdiv{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-top: 30px;
+	background-color: black;
+}
+.food{
+	margin-left: 30px;
+	display: inline;
+	border-radius: 30px;
+	background-color: black;
+	margin-bottom: 100px;
+	box-shadow: 10px 10px 10px rgba(241, 241, 239, 0.5);
+}
+.food1{
+	margin-left: 30px;
+	border-radius: 40px;
+	box-shadow: 10px 10px 10px rgba(244, 244, 243, 0.5);
+}
+.cake{
+	margin-left: 30px;
+	display: inline;
+	border-radius: 30px;
+	background-color: black;
+	margin-bottom: 100px;
+	box-shadow: 10px 10px 10px rgba(241, 241, 239, 0.5);
+}
+.cake2{
+	margin-left: 30px;
+	border-radius: 40px;
+	box-shadow: 10px 10px 10px rgba(244, 244, 243, 0.5);
+}
+.description{
+	text-decoration: underline;
+	font-style: italic;
+}
+.menul{
+	text-align: left;
+	padding: 2px;
+	margin-left: 1px;
+}
+.menuli{
+	padding: 10px;
+	margin-left: 1px;
+	width: 500px;
+	
+}
+.menul2{
+	padding: 10px;
+	margin-left: 1px;
+	width: 500px;
+	
+}
+span{
+	margin-left: 1px;
+
+}
+.price{
+	margin-left: 270px;
+}
+.description{
+	margin-left: 5%;
+	display: block;
+}
+.dish{
+	font-family: 'Pacifico', cursive;
+}
+
+#today{
+	display:flex;
+	background-color: white;
+	color:black;
+	width: 500px;
+	border-style: inset outset;
+	border-width: 5px;
+	border-radius: 20px;
+	border-color: white;
+	margin-left: 30px;
+	cursor: pointer;
+	margin-top: 30px;
+	transition: border-width 3s;
+ 
+    
+
+}
+#today:hover{
+	cursor: pointer;
+	color:white;
+	background-color: black;
+	color:white;
+	border-style: inset outset;
+	border-color: white;
+	border-width: 10px;
+	width:600px;
+    border-width: 20px;
+
+}
+
+.menulii{
+	margin-left: 1px;
+}
+.menul{
+	margin-left: 1px;
+}
+.today1{
+	margin-right: 20%;
+
+}
+.dessets1{
+	margin-right: 20%;
+}
+.menul2{
+	margin-left: 1px;
+}
+#desserts:hover{
+	cursor: pointer;
+	color:white;
+	background-color: black;
+	border-style: inset outset;
+	border-color: white;
+	border-width: 10px;
+	width:600px;
+    border-width: 20px;
+}
+
+.h22{
+	display:inline-block;
+}
+.h33{
+	display:inline-block
+}
+
+.info{
+    background-color: rgba(0, 0, 0, 0.541);
+}
+.quote{
+    margin-left: 600px;
+}
+.hi1,a{
+    color:white;
+}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Satisfy&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+</head>
+<body background="res1.jpg">
+<h1 class="tit">Slice of Spice<img src="chilli.png" width="70px" height="70px"></h1>
+<div class="menu">
+<ul>
+<a href="index.html"><li class="hi1">HOME</li></a>
+<a href="menu1.html"><li class="hi1">MENU</li></a>
+<a href="aboutus.html"><li class="hi1">OUR STORY</li></a>
+<a href="contactus1.html"><li class="hi1">CONTACT US</li></a>
+<a href="https://www.instagram.com/ketham_sanjay.24/"><li class="hi"><img src="instagram.png" width="20px" height="20px"></li></a>
+<li class="hi"><img src="call.png" width="20px" height="20px"></li>
+<a href="sanjayketham2004@gmail.com"><li class="hi"><img src="email.png" width="20px" height="20px"></li></a>
+<a href="login website.html" style="text-decoration: none; color: white;"><li class="hi"><img src="login.png" width="20px" height="20px"><a href="login website.html">Login</li></a>
+<a href="registration.html" style="text-decoration: none; color: white;"><li>SIGN UP</li></a>
+</ul>
+</div>
+
+<div class='info'>
+	<h1>Stunning food, Amazing Quality</h1>
+<span class="quote">
+		Let us host your next special occasion
+	</span>
+
+
+</div>
+<div></div>
+
+<div class="drmen" >
+    <div id="drdiv">
+		<img src="drink.jpg" width="500px" heigth="500px" class="drink">
+	<img src="drink1.jpg" width="500px" heigth="500px" class="drink1">
+	</div>
+
+<div id="menu">
+
+ <!-- menu layout-->
+       
+            <h4>DRINK MENU</h4>
+			<h5> Sprits, Wine, and Beer</h5>
+	<ul class="menulii">
+		<li class="menuli">
+			<span class="dish">Vodka 1oz</span>
+			<span class="Price">₹480</span>
+			<span class="Description">VODKA and choice of juice or soda.</span>
+		</li>
+		<li class="menuli">
+			<span class="dish">Rum 1oz.</span>
+			<span class="Price">₹490</span>
+			<span class="Description">RUM and choice of juice or soda.</span>
+		</li>
+		<li class="menuli">
+			<span class="dish">Whisky 1oz.</span>
+			<span class="Price">₹480</span>
+			<span class="Description">Whisky and choice of juice or soda.</span>
+		</li>
+		<li class="menuli">
+			<span class="dish">Tequila 1oz.</span>
+			<span class="Price">₹480</span>
+			<span class="Description">Tequila served with juice or soda.</span>
+		</li>
+		<li class="menuli">
+			<span class="dish">Red wine.</span>
+			<span class="Price">₹490</span>
+			<span class="Description">8oz Red wine, ask server for our wine selection. </span>
+		</li>
+		<li class="menuli">
+			<span class="dish">White wine.</span>
+			<span class="Price">₹480</span>
+			<span class="Description">8oz white wine, ask server for our wine selection.</span>
+		</li>
+		<li class="menuli">
+			<span class="dish">Sparkling wine .</span>
+			<span class="Price">₹960</span>
+			<span class="Description">8oz sparking wine glass of your choice.</span>
+		</li>
+		<li class="menuli">
+			<span class="dish">Domestic and foreign beer .</span>
+			<span class="Price">₹480 - ₹640</span>
+			<span class="Description">Domestic and foreign beer of you choice</span>
+		</li>
+	</ul>
+</div>
+	<!-- menu food-->
+</div>
+<div class="drmen1" >
+    <div id="drdiv">
+		<img src="food.jpg" width="500px" heigth="500px" class="food">
+	<img src="food1.jpg" width="500px" heigth="500px" class="food">
+	</div>
+<div id="today" class="today1">
+	
+<ul class="menul">
+	<li><h2 class="h22">FOOD MENU</h2></li>
+	<li><h3 class="h22"> Entrees, mains, and handhelds</h3></li>
+<li class="menuli">
+	<span class="dish">Nachos</span>
+	<span class="Price">₹996</span>
+	<span class="Description">cheese, onions, tomotoes. 
+	</span>
+</li>
+<li class="menuli">
+	<span class="dish">Tacos.</span>
+	<span class="Price">₹996</span>
+	<span class="Description">chicken or beef with your choice of side.</span>
+</li>
+<li class="menuli">
+	<span class="dish">Chicken rice bowl.</span>
+	<span class="Price">₹1328</span>
+	<span class="Description">
+		brown rice, and veggies, served with choice or sauce 
+	</span>
+</li>
+<li class="menuli">
+	<span class="dish">Grilled chicken.</span>
+	<span class="Price">₹1245</span>
+	<span class="Description">
+		Juicy grilled chicken served with choice of sauce.
+	</span>
+</li>
+<li class="menuli">
+	<span class="dish">Steak and fired beans.</span>
+	<span class="Price">₹1245</span>
+	<span class="Description">Steak and your choice of side.</span>
+</li>
+<li class="menuli">
+	<span class="dish">burrito.</span>
+	<span class="Price">₹996</span>
+	<span class="Description">Your choice of beef or chicken.</span>
+</li>
+<li class="menuli">
+	<span class="dish"> Mutton Korma.</span>
+	<span class="Price">₹1200</span>
+	<span class="Description">A flavourful mutton curry, where the meat is stirred with curd, garlic-ginger paste, cloves, cardamom and cinnamon sticks.</span>
+</li>
+<li class="menuli">
+	<span class="dish"> Tandoori Lamb Chops.</span>
+	<span class="Price">₹980</span>
+	<span class="Description">Lamb chops marinated in strained yogurt and flavoursome masalas. Cooked till tender, this dish is guaranteed to impress..</span>
+</li>
+
+</ul></div>
+<!-- Desserts-->
+
+
+</body>
+</html>
